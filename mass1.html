@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom Login</title>
+    <link rel="stylesheet" href="../mass1.css">
+  
+</head>
+<body>
+    <div class="chatroom-container">
+        <!-- Left Side: Login Form -->
+        <div class="login-section">
+            <h1 class="title">chatroom</h1>
+            <form class="login-form">
+                <label for="instagram-id">Instagram ID:</label>
+                <input type="text" id="instagram-id" placeholder="Enter your Instagram ID">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" placeholder="Enter your Username">
+                <button type="button" onclick="fun()">Login</button>
+            </form>
+        </div>
+
+        <!-- Right Side: About Section -->
+        <div class="about-section">
+            <div class="slider">
+                <button class="arrow left-arrow">←</button>
+                <div class="about-content">
+                    <h2>About:</h2>
+                    <p>A little about this chatroom...</p>
+                </div>
+                <button class="arrow right-arrow">→</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        console.log("In Script");
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        const aboutContent = document.querySelector('.about-content p');
+
+        let content = [
+            "A little about this chatroom...",
+            "This is a space to meet and interact with friends!",
+            "Enjoy your chat experience with a beautiful interface."
+        ];
+        let index = 0;
+
+        rightArrow.addEventListener('click', () => {
+            index = (index + 1) % content.length;
+            aboutContent.textContent = content[index];
+        });
+
+        leftArrow.addEventListener('click', () => {
+            index = (index - 1 + content.length) % content.length;
+            aboutContent.textContent = content[index];
+        });
+        function fun()
+        {           
+            location.replace("index.html");
+        }
+    </script>
+</body>
+</html>

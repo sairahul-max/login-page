@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202131;
+    color: white;
+    background-image: url('bg1.jpg');
+    background-attachment: fixed;  /* Ensures the background image stays in place */
+    background-size: cover;       /* Optional: Makes sure the background image covers the entire screen */
+    background-position: center;  /* Optional: Centers the image on the screen */
+}
+
+.chatroom-container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url('background.jpg'); /* Replace with the actual image */
+    background-size: cover;
+    background-position: center;
+}
+
+.login-section {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.about-section {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.arrow {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.arrow:hover {
+    background-color: #0056b3;
+}
